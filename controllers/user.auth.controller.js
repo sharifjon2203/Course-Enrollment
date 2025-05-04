@@ -17,11 +17,11 @@ export class UserAuthController {
             const { email, password } = req.body;
             const user = await User.findOne({ email });
             if (!user) {
-                catchError(res, 404, 'User not found');
+                return catchError(res, 404, 'User not found');
             }
             const isMatchPassword = await encode(password, user.hashedPassword);
             if (!isMatchPassword) {
-                catchError(res, 400, 'Invalid password');
+                return catchError(res, 400, 'Invalid password');
             }
 
             const otp = await generateOtp()
@@ -36,7 +36,7 @@ export class UserAuthController {
             transporter.sendMail(mailMessage, function (err, info) {
                 if (err) {
                     console.log(`Error on sending to mail: ${err}`)
-                    catchError(res, 400, err);
+                    return catchError(res, 400, err);
                 } else {
                     // console.log(info);
                     setCache(user.email, otp)
@@ -54,7 +54,7 @@ export class UserAuthController {
 
         } catch (error) {
             console.log(error)
-            catchError(res, 500, error.message);
+            return catchError(res, 500, error.message);
         }
     }
 
@@ -64,12 +64,12 @@ export class UserAuthController {
             const user = await User.findOne({ email })
 
             if (!user) {
-                catchError(res, 404, "User not found")
+                return catchError(res, 404, "User not found")
             }
 
             const otpCache = getCache(email)
             if (!otpCache || otp != otpCache) {
-                catchError(res, 500, "OTP expired")
+                return catchError(res, 500, "OTP expired")
             }
 
             const payload = { id: user._id };
@@ -89,7 +89,7 @@ export class UserAuthController {
 
 
         } catch (e) {
-            catchError(res, 500, e.message)
+            return catchError(res, 500, e.message)
         }
     }
 
@@ -100,11 +100,11 @@ export class UserAuthController {
 
             const refreshToken = req.cookies.refreshToken
             if (!refreshToken) {
-                catchError(res, 401, "Refresh token not found")
+                return catchError(res, 401, "Refresh token not found")
             }
             const decodeToken = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_KEY)
             if (!decodeToken) {
-                catchError(res, 401, "refresh token expired")
+                return catchError(res, 401, "refresh token expired")
             }
 
             res.clearCookie("refreshToken")
@@ -114,7 +114,7 @@ export class UserAuthController {
                 data: {}
             })
         } catch (e) {
-            catchError(res, 500, e)
+            return catchError(res, 500, e)
         }
     }
 
