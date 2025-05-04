@@ -1,3 +1,48 @@
 {"level":"info","message":"Server started","timestamp":"2025-05-04T07:36:59.720Z"}
 {"level":"error","message":"CatchError: Invalid password","timestamp":"2025-05-04T07:37:07.850Z"}
 {"level":"error","message":"CatchError: ValidationError: \"password\" length must be at least 8 characters long","timestamp":"2025-05-04T07:38:19.313Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T20:53:49.081Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T20:53:50.250Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T20:53:57.734Z"}
+{"level":"error","message":"CatchError: Invalid password","timestamp":"2025-05-04T20:54:08.501Z"}
+{"level":"error","message":"CatchError: Refresh token not found","timestamp":"2025-05-04T20:54:25.836Z"}
+{"level":"error","message":"CatchError: ValidationError: \"description\" is required","timestamp":"2025-05-04T20:55:38.192Z"}
+{"level":"error","message":"CatchError: invalid token","timestamp":"2025-05-04T20:59:47.222Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:01:36.039Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:02:40.678Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:02:57.262Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:03:29.248Z"}
+{"level":"error","message":"CatchError: Cannot populate path `enrolledCourses.createdBy` because it is not in your schema. Set the `strictPopulate` option to false to override.","timestamp":"2025-05-04T21:03:54.653Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:08:43.543Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:09:23.255Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:09:29.332Z"}
+{"level":"error","message":"CatchError: invalid token","timestamp":"2025-05-04T21:12:49.318Z"}
+{"level":"error","message":"CatchError: Course not found","timestamp":"2025-05-04T21:13:18.576Z"}
+{"level":"error","message":"CatchError: Course not found","timestamp":"2025-05-04T21:13:27.228Z"}
+{"level":"error","message":"CatchError: invalid token","timestamp":"2025-05-04T21:13:31.531Z"}
+{"level":"error","message":"CatchError: Cannot read properties of undefined (reading 'toString')","timestamp":"2025-05-04T21:14:16.411Z"}
+{"level":"error","message":"CatchError: Cannot read properties of undefined (reading 'toString')","timestamp":"2025-05-04T21:14:34.248Z"}
+{"level":"error","message":"CatchError: Cannot read properties of undefined (reading 'toString')","timestamp":"2025-05-04T21:14:47.767Z"}
+{"level":"error","message":"CatchError: Cannot read properties of undefined (reading 'toString')","timestamp":"2025-05-04T21:15:25.655Z"}
+{"level":"error","message":"CatchError: Cannot read properties of undefined (reading 'toString')","timestamp":"2025-05-04T21:15:36.933Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:16:43.858Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:51:48.813Z"}
+{"level":"error","message":"CatchError: invalid token","timestamp":"2025-05-04T21:54:11.720Z"}
+{"level":"error","message":"CatchError: invalid token","timestamp":"2025-05-04T21:55:30.470Z"}
+{"level":"error","message":"CatchError: invalid token","timestamp":"2025-05-04T21:55:32.664Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:55:54.319Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:55:55.639Z"}
+{"level":"error","message":"CatchError: invalid token","timestamp":"2025-05-04T21:55:58.598Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T21:56:00.053Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T22:00:16.760Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T22:00:25.209Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T22:00:28.244Z"}
+{"level":"error","message":"CatchError: invalid token","timestamp":"2025-05-04T22:00:31.157Z"}
+{"level":"error","message":"CatchError: ValidationError: \"password\" length must be at least 8 characters long","timestamp":"2025-05-04T22:04:16.525Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T22:06:19.866Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T22:06:25.501Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T22:06:56.233Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T22:06:59.001Z"}
+{"level":"error","message":"CatchError: Unauthorized to update this user","timestamp":"2025-05-04T22:07:49.379Z"}
+{"level":"error","message":"CatchError: Unauthorized to update this user","timestamp":"2025-05-04T22:07:57.152Z"}
+{"level":"info","message":"Server started","timestamp":"2025-05-04T22:08:35.964Z"}

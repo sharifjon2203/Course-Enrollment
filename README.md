@@ -1,1 +1,1 @@
-## POSTMAN  JSON:   [JSON Link](http://bit.ly/4cVBOsA)
+## POSTMAN  JSON:   [JSON Link](https://bit.ly/4cVBOsA)

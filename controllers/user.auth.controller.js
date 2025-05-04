@@ -129,11 +129,11 @@ export class UserAuthController {
 
             // console.log(`Value" - ${value}\nError - ${error}`)
 
-            const { username, password, email } = value;
+            const { username, password, email, name } = value;
             const hashedPassword = await decode(password, 7);
 
             const user = await User.create({
-                username, hashedPassword, email
+                username, hashedPassword, email, name
             });
             return res.status(201).json({
                 statusCode: 201,

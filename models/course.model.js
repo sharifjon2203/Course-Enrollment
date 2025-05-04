@@ -6,6 +6,9 @@ const courseSchema = new Schema({
     teacher: {
         type: Schema.Types.ObjectId,
         ref: "User",
-        required: true
+        required: true,
+        unique: true
     }
 }, { timestamps: true })
+
+export const Course = model('Course', courseSchema) 
